@@ -1,0 +1,76 @@
+% [[file:../index.org::*Frontmatter][Frontmatter:1]]
+\documentclass[twoside,11pt,a4paper]{article}
+\input{preamble.tex}
+
+
+\begin{document}
+\pagestyle{empty}
+
+  \title{\Huge Systems of Linear Equations}
+  \author{ }
+	
+  \date{\large \today}
+  \maketitle
+	\pagenumbering{arabic}
+\thispagestyle{empty}
+
+\pagestyle{empty}
+
+
+
+
+\newpage
+\pagestyle{empty}
+\selectlanguage{english}
+
+\tableofcontents
+\vfill
+% Frontmatter:1 ends here
+
+% [[file:../index.org::*Why?][Why?:1]]
+\subsection*{What Is the Goal of This Script and Why Is This Interesting?}
+
+Many everyday and also many mathematical problems lead to equations which have to be solved. The easiest type of such equations are the linear equations. They are very easy to solve. But sometimes we need several variables and several equations to describe a situation or a problem, because there are several things we look for and more than one piece of information is given. In this way, we get systems of equations in more than one variable. 
+\vsp
+
+In the first chapter, we focus on linear equations in one variable. An example of a linear equation is
+\[
+2x-5=7.
+\] 
+A simple calculation is enough to know that $x=6$ is a solution of this equation. The procedure of finding a solution of the equation is not our main goal of this chapter but to define rigorously the terms equation, solving, linear and which special cases may occur. Linear equations appear often in everyday life and since solving them is so easy the much harder part is to actually find the equation we have to solve. 
+\vsp
+
+Using the knowledge of the first chapter we will encounter systems of linear equations in the second chapter. A system of equations consists of several equations in several variables which have to be solved simultaneously. This is much more difficult than just solving one equation in one variable, especially if we have many equations and many variables. We will discuss two strategies of solving such systems of linear equations: The substitution method and the elimination method. 
+
+\thispagestyle{empty}
+
+\newpage
+
+\pagenumbering{arabic}
+\pagestyle{fancy} %eigener Seitenstil
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+\fancyhead[L]{Systems of Linear Equations} %Kopfzeile links
+\fancyhead[R]{\rightmark} 
+\fancyhead[C]{}
+\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
+\fancyfoot[C]{\thepage} %Seitennummer
+%\renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
+\setlength{\headheight}{13.6pt} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{page}{1}
+
+%\setlength{\baselineskip}{1.2\baselineskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sec_LinearEqs.tex}
+\input{sec_SysLinearEqs.tex}
+% Why?:1 ends here
+
+% [[file:../index.org::*Epilogue][Epilogue:1]]
+\end{document}
+% Epilogue:1 ends here

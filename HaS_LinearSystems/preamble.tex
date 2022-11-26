@@ -1,0 +1,156 @@
+% [[file:../index.org::*Preamble][Preamble:1]]
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=34mm, right=34mm, bottom=25mm}
+
+\usepackage{emptypage}
+
+\usepackage[titletoc,title]{appendix}
+\usepackage{nameref}
+\usepackage{amsfonts}
+\usepackage{amsmath,amscd}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[framemethod=TikZ]{mdframed}
+\tikzstyle{help lines}+=[dotted]
+\usepackage{pgfplots} %To draw graphs of function directly in the latex file
+%\usepackage{forest} %To create trees
+%\usepackage{hyperref} %produce hypertext links
+%\usepackage{pdfpages} % Include parts of pdf-files
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{comment} %let latex skip everything between \begin{comment} and \end{comment}
+
+
+\bibliographystyle{plain}
+
+
+%New command
+\newcommand{\vsp}{\vspace{5mm}}
+\newcommand{\hsp}{\hspace{5mm}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\W}{\mathbb{W}}
+
+
+% Theorem Style
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{theorem*}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{exer}{Exercise}   %in the added section 
+%\newtheorem{exer*}[exer]{Exercise*}
+\newtheorem*{example}{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{remark*}{Remark}
+\newtheorem{task}{Task}
+
+
+%Equation numbering
+%\numberwithin{equation}{section} 
+%\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+
+
+%Redefine the first level
+\renewcommand{\theenumi}{\roman{enumi}}
+
+\renewcommand{\baselinestretch}{1.00}\normalsize
+
+\renewcommand{\labelenumi}{\alph*)} % In enumerate wird a),b),c) etc. gezählt.
+
+
+\parindent0mm
+% Preamble:1 ends here
+
+% [[file:../index.org::*Added][Added:1]]
+\graphicspath{{images}}
+\newif\ifEN\ENtrue
+\def\tr|#1|#2|{\ifEN #1\else #2\fi}
+\def\trx;#1;#2;{\ifEN #1\else #2\fi}
+
+
+\newif\ifANSWERS\ANSWERSfalse% Mit Lösungen?
+\newif\ifAnswersAtEnd\AnswersAtEndfalse	% Mit Lösungen am Ende?
+%%%%%%%%%% Lösungen zu verschiedenen Aufgabentypen und Fragen im Theorieteil %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[lastexercise,answerdelayed]{exercise}
+% lastexercise: Lösungen beziehen sich jeweils direkt auf die Aufgabe davor 
+% answerdelayed: Alle angesammelten Lösungen werden mit \shipoutAnswer ausgegeben
+% 
+
+\newcounter{exer}
+%\newcounter{exc}[section]
+%\renewcommand{\theexc}{\arabic{subsection}-\arabic{exc}}%Doesn't work
+%\newcounter{refl}
+%\newcounter{discover}
+%\newcounter{research}
+%\tr|\newenvironment{discover}{\begin{Exercise}[title={Entdecken},counter={discover}]}{\end{Exercise}}
+%   |\newenvironment{discover}{\begin{Exercise}[title={Discover},counter={discover}]}{\end{Exercise}}|
+%\tr|\newenvironment{research}{\begin{Exercise}[title={Erforschen},counter={research}]}{\end{Exercise}}
+%   |\newenvironment{research}{\begin{Exercise}[title={Research},counter={research}]}{\end{Exercise}}|
+\tr|\newenvironment{exer}{\begin{Exercise}[title={Exercise}, counter={exer}]} {\end{Exercise}}
+   |\newenvironment{exer}{\begin{Exercise}[title={Übung}, counter={exer}]} {\end{Exercise}}|
+%\newenvironment{refl}{\begin{Exercise}[title={Reflection}, counter={refl}]} {\end{Exercise}}
+%\newenvironment{intro}{\begin{Exercise}[title={Introductory problem}, counter={refl}]} {\end{Exercise}}
+%Too complicated:
+%\renewcommand{\ExerciseHeader}{\textbf{\ExerciseTitle\ \arabic{section}.\arabic{subsection}-\ExerciseHeaderNB }}
+%\renewcommand{\AnswerHeader}{\textbf{Solution of \ExerciseTitle\  \arabic{section}.\arabic{subsection}-\ExerciseHeaderNB\  }}
+%Simpler
+\renewcommand{\ExerciseHeader}{\textbf{\ExerciseTitle\ \ExerciseHeaderNB }}
+\renewcommand{\AnswerHeader}{\textbf{\ExerciseTitle\  \ExerciseHeaderNB\  }}
+
+
+
+%Lösungen zu...:
+%\begin{exc}
+%\end{exc}
+%\begin{Answer}
+%\end{Answer}
+
+%Eine Lösung zu einer Aufgabe im Text, kann folgendermassen angegeben werden
+%\begin{Exercise*}[label={intext1}]
+%\end{Exercise*}
+%\begin{Answer}Seite \pageref{intext1}
+%\end{Answer}
+
+%Die Antworten kommen entweder alle am Ende oder dort wo die jeweiligen \myshipoutAnswer Befehle stehen. 
+%\newif\ifAnswersAtEnd\AnswersAtEndtrue
+\ifANSWERS 
+  \ifEN
+    \ifAnswersAtEnd\AtEndDocument{\newpage\section{Answers}\shipoutAnswer}
+    \else\fi
+  \else
+    \ifAnswersAtEnd\AtEndDocument{\newpage\section{Lösungen}\shipoutAnswer}
+    \else\fi
+  \fi 
+\fi
+
+\setlength{\fboxsep}{0pt}
+\definecolor{blank}{gray}{1.00}
+\def\answerline#1{%
+  \ifhmode\\[2ex]\fcolorbox{blank}{blank}{\hbox to \textwidth{\vbox to #1\baselineskip{}}}%
+  \else\par\medskip\fcolorbox{blank}{blank}{\hbox to \textwidth{\vbox to #1\baselineskip{}}}\par\bigskip%
+  \fi
+}	
+\def\flushanswer#1{\hfill\fcolorbox{blank}{blank}{\hbox to #1\linewidth{\vbox to \baselineskip{}}}}	
+\def\answer#1{\raisebox{-0.3em}{\fcolorbox{blank}{blank}{\hbox to #1\linewidth {\vbox to 0.8\baselineskip{}}}}	}
+\def\answerabs#1{\raisebox{-0.3em}{\fcolorbox{blank}{blank}{\hbox to #1 {\vbox to 0.8\baselineskip{}}}}	}
+
+
+
+\usepackage{hyperref}
+% Added:1 ends here

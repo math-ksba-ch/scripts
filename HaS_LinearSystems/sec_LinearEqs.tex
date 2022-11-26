@@ -1,0 +1,490 @@
+% [[file:../index.org::*Linear Equations][Linear Equations:1]]
+\section{Linear Equations}
+% Linear Equations:1 ends here
+
+% [[file:../index.org::*Some examples to start with][Some examples to start with:1]]
+\subsection{Some Examples to Start With}
+\begin{exer}
+At a market we buy some apples. We have 10 Swiss francs with us and the price of one kilo of apples is CHF 2.40. How many kilograms may we buy?
+\end{exer}
+\vspace{5\baselineskip}
+
+\begin{exer}
+ For a staircase with 22 steps, 2 steps could be saved if each step were increased by 1.6 cm. How high is a step or the whole staircase? 
+\end{exer}
+\vspace{5\baselineskip}
+
+
+
+\begin{exer}
+If you add 13 to six times a number, you get the same result as if you reduce the eleven-fold of this number by 2. Which number is it?
+\end{exer}
+\vspace{5\baselineskip}
+
+\begin{exer}
+An amount $K$ is invested at an interest rate of 2\%. After one year the account will be CHF 3570. What was the amount at the beginning?
+\end{exer}
+\vspace{5\baselineskip}
+
+
+\begin{exer}
+A triangle has a circumference of 90 cm. Furthermore, one side is half as long as the other and 6 cm longer than the third. Determine the side lengths. 
+\end{exer}
+\vspace{5\baselineskip}
+% Some examples to start with:1 ends here
+
+% [[file:../index.org::*Linear Equations][Linear Equations:1]]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lineare Gleichungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Linear Equations}
+
+The above examples have one thing in common: They all lead to a so-called \textbf{linear equation}. These linear equations are of great importance in our everyday life since many circumstances may be described by such linear equations. Fortunately, they are really easy to solve. Nevertheless, we need to be careful since they sometimes play a trick on us. But let us discuss that at a later stage and focus now on the definition of linear equations to make sure we all think the same when using these words:  
+
+\vsp
+
+Notice first that \textbf{linear equation} consists of two parts: The \textbf{equation} and that this equation is \textbf{linear}. 
+\vsp
+
+\begin{tcolorbox}[colback=white]
+\begin{definition}
+An \textbf{equation} consists of three parts: The left-hand side of the equation, the equal sign and the right-hand side of the equation. The two sides are so-called \textbf{mathematical terms}. 
+\end{definition}
+\end{tcolorbox}
+\vsp
+
+Notice that we compare two things in a equation: The left-hand side and the right-hand side of the equation sign, and we want them to be equal. It is a little bit as if we would have a scale and we need to make sure that the left-hand side and the right-hand side weight the same amount. Therefore, think of an equation always as comparing things!
+
+\begin{center}
+\includegraphics[width=7cm]{scale}
+\end{center}
+\vsp
+
+Now what about the term ``linear''?
+\vsp
+
+\begin{tcolorbox}[colback=white]
+\begin{definition}
+An equation is called \textbf{linear} if all terms consist of variables and numbers which are linked together in one of the following ways:
+\begin{itemize}
+\item by addition ($+$) or subtraction ($-$)
+\item by multiplication of a variable by a number
+\end{itemize}
+These terms are called \textbf{linear}, too.
+\end{definition}
+\end{tcolorbox}
+
+\vsp
+
+This sounds complicated but it is actually not: it just means that if we have a variable $x$, we may multiply this variable by a number, let's say $2$ and we can add another number to it, let's say $3$. We therefore get a linear term
+\[
+2\cdot x + 3
+\]
+The same holds for the other side of the equation, let's say this is 
+\[
+4\cdot x + 5
+\]
+We then get an linear equation by equalizing them
+\[
+2\cdot x + 3=4\cdot x + 5
+\]
+
+Of course, we could also have more than one term with an $x$ in it and we could even have more than just one variable, for example $y$ and $z$. We could also add more than just one number which, by the way, do not have to be natural, they could be any real number. Therefore the following equation is linear, too:
+
+\[
+15x + 7y - 3x + \sqrt{2}x - \frac{7}{5} = \pi \cdot z - 2.56\cdot x + \sqrt{5}.
+\]
+
+
+
+\vsp
+% Linear Equations:1 ends here
+
+% [[file:../index.org::*Counterexamples][Counterexamples:1]]
+\subsection*{Counterexamples}
+
+It is helpful to understand what a \textbf{nonlinear} equation is: Well, all the other ones, for example
+\[
+x^2-3x +x\cdot y= 26 \hsp \text{or} \hsp \sqrt{z}-5=0 \hsp \text{or} \hsp \frac{1}{x} = 2^x-\pi
+\]
+
+On the other hand, \textbf{inequalities} are not equations:
+\[
+x+3\leq 5 \hsp \text{or} \hsp x-5>7-x \hsp \text{or} \hsp5x+3y\leq 7z+\sqrt{3}
+\]
+are all inequalities, so the left-hand side and the right-hand side do not have to be equal. The inequality signs mean
+
+\begin{center}
+\begin{tabular}{rl}
+$\leq$ & less than or equal to\\
+$<$ & less than \\
+$\geq$ & greater than or equal to\\
+$>$ & greater than.
+\end{tabular}
+\end{center}
+
+\vsp
+
+\begin{exer}
+$ $
+Write down some examples of linear and nonlinear terms, equations and inequalities. 
+\end{exer}
+
+
+\vspace{3cm}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Counterexamples:1 ends here
+
+% [[file:../index.org::*Linear Equations in One Variable][Linear Equations in One Variable:1]]
+\subsection{Linear Equations in One Variable}
+
+The easiest case of a linear equation is when we just have one type of variable, for example $x$. Of course, $x$ is just a name for a variable and we could also denote the variable by $t$ or $y$ or $a$ or $\alpha$ or $\ldots$.  
+\vsp
+
+Here a few examples of linear equations in one variable:
+\begin{eqnarray*}
+4&=&2-5+t \\
+5y+3&=&7y-2 \\
+2x+5x-3x+7x&=&3 \\
+\end{eqnarray*}
+
+
+Notice that all these equations may be transformed into an easier form:
+\[
+\begin{array}{rclcccc}
+4&=&2-5+t &\Rightarrow&7=t &\Rightarrow& t=7\\
+&&&&&&\\
+5y+3&=&7y-2 &\Rightarrow& -2y=-5 &\Rightarrow& y=\frac{5}{2} \\
+&&&&&&\\
+2x+5x-3x+7x&=&3 &\Rightarrow& 11x=3 &\Rightarrow& x=\frac{3}{11}  \\
+\end{array}
+\]
+
+This means that we \textbf{solve} them, i.e. we solve the equation with respect to a certain variable such that we get a \textbf{solution} for the variable. That means that if we replace the variable by this solution in the equation we started with, we get a correct statement, i.e. the left- and the right-hand side ``weigh'' the same, i.e. they are equal:
+
+\[
+\begin{array}{rcl}
+4&=&2-5+7 \\
+5\cdot \frac{5}{2}+3&=&7\cdot \frac{5}{2}-2 \\
+2\cdot \frac{3}{11}+5\cdot \frac{3}{11}-3\cdot \frac{3}{11}+7\cdot \frac{3}{11}&=&3\\
+\end{array}
+\]
+\vsp
+
+\begin{tcolorbox}[colback=white]
+Replacing the variable by its \textbf{solution} in the equation gives us a correct statement, i.e. the right-hand side and the left-hand side of the equation sign are equal. The set of all solutions of an equation is called the \textbf{solution set} of the equation.
+\end{tcolorbox}
+\vsp
+
+\begin{remark}
+By the way, when we transform an equation to find a solution, we are only allowed to transform it in a way which does not change the solution set of the equation. These types of transformations are called \textbf{equivalent transformations}. For example, we are not allowed to square both sides of the equation sign (or if we do so, we have to be very careful), because $x=-4$ and $x^2=16$ does not have the same solution set (the latter is true for $x=4$ and $x=-4$). But we are allowed to add and subtract things and to multiply or divide by a number. These transformations do not change the solution set of the equation.
+\end{remark}
+% Linear Equations in One Variable:1 ends here
+
+% [[file:../index.org::*Equations With Not Just One Solution][Equations With Not Just One Solution:1]]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{Equations With Not Just One Solution}
+
+Before we have a look at more interesting equations (i.e. with more than one variable), let us consider a few tricky cases:
+\vsp
+\begin{itemize}
+\item The equation 
+
+\[
+-1+2x+5=4x-3-2x+7
+\]
+
+is certainly linear! But let us transform the left- and right-hand side a little bit to get
+
+\[
+2x+4=2x+4
+\]
+
+Whatever we enter for $x$ we always get a true statement. We could even transform this equation into the equation
+
+\[
+0=0
+\]
+by subtracting $2x+4$ on both sides. 
+
+\item The equation
+
+\[
+2x-3=x+2+x
+\]
+is again certainly linear. But subtracting $2x$ on both sides, we get
+
+\[
+-3=2
+\]
+which is clearly wrong! 
+
+\end{itemize}
+
+So it may happen that a linear equation has one, infinitely many or no solution at all:
+
+\[
+\begin{array} {rcl}
+-3=2 &\Rightarrow& \mathbb{L}=\{\}=\emptyset \\
+0=0 &\Rightarrow& \mathbb{L}=\R \\
+x=\frac{7}{2} &\Rightarrow& \mathbb{L}=\{\frac{7}{2}\}
+\end{array}
+\]
+
+
+
+
+
+\begin{exer}
+Solve the following equations with respect to the variable and indicate the set of solutions:
+\begin{enumerate}[label=\emph{\alph*})]
+
+\item $8 - 4x = 0$
+\vfill
+
+\item $7 - 5t = 7 + 2t$
+\vfill
+
+\item $13 + 4 ( 6y -5) = 5 (5y + 2)$
+\vfill
+
+\item $3(2x+5)-2x=4x+2$
+\vfill
+
+\item $7z+3=5z+2z+3$
+\vfill 
+
+\end{enumerate}
+\end{exer}
+% Equations With Not Just One Solution:1 ends here
+
+% [[file:../index.org::*Mathematizing Problems][Mathematizing Problems:1]]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{Mathematizing Problems}
+Often, the difficulty is not to solve an equation but to actually find the equation one has to solve. You have to mathematise the text you read. To do so, give the quantity you want to find (your variable) a name. It does not have to be $x$, sometimes another letter makes more sense. Then read through the text carefully and find all necessary information you need to solve the task (highlight it in the text if that helps you). Then transform these information into mathematical terms. In this way, you should get an equation (or later on several equations) which you have to solve to get the solution.
+
+\begin{example} $ $
+
+12 kg Gala apples (price of 1 kg is 2.50 Swiss francs) are mixed with Granny Smith apples (price of 1 kg is 4 Swiss francs). How many kg of the Granny Smith apples do we need to add to the Gala apples to get a mixture with an average prize 3 Swiss francs?
+\\
+
+\underline{Solution:}
+Let $x$ denote the kg of Granny Smiths we add. The price of the Gala apples is $12\cdot 2.50$. The price of the Granny Smith apples is $4\cdot x$. Together we get a price of 
+\[
+12\cdot 2.5 + 4\cdot x.
+\]
+On the other side, we have in total $12+x$ kg apples, and they should cost 3 Swiss francs per kilo. So we get a total price of 
+\[
+(12+x)\cdot 3.
+\]
+These are the two sides of the scale and they should be equal. Therefore, we get the equation
+\[
+12\cdot 2.5 + 4\cdot x = (12+x)\cdot 3.
+\]
+Now we solve the equation:
+\[
+12\cdot 2.5 + 4\cdot x = (12+x)\cdot 3 \hsp\Rightarrow\hsp 30+4x=36+3x \hsp\Rightarrow\hsp x=6. 
+\]
+
+\end{example}
+
+\newpage
+\begin{exer}
+$ $
+
+\begin{enumerate}[label=\emph{\alph*})]
+
+\item The distance between the cities A and B is 99 km. A car leaves city A at 09:00 and drives with speed 60 km/h from A to B. Another car leaves city B at 09:15 and drives with speed 84 km/h from B to A. At what time do they meet?
+\vfill
+
+\item We extend the diameter of a circle in one direction by 12 cm. At the end point of that line we draw two tangents lines at the circle.
+  Calculate the diameter of the circle if the length of two lines from the end point to the circle is 26 cm. 
+\vfill
+
+\item A cubical-shaped container with edge length 40 cm is filled with water up to 30 cm height. We immerse an 80  cm long stick with a square cross-sectional area of 10 cm side length vertically until the lower end of the stick is 15 cm above the bottom of the container. Calculate the immersion depth of the stick.
+\vfill
+
+
+
+\end{enumerate}
+\end{exer}
+% Mathematizing Problems:1 ends here
+
+% [[file:../index.org::*Linear Equations in One Variable and Parameters][Linear Equations in One Variable and Parameters:1]]
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\subsection{Linear Equations in One Variable and Parameters}
+
+Quite often, equations and linear equations in particular do not only have just one variable but also so-called \textbf{parameters}. Let's have a look at an example to understand what is meant by that:
+
+\begin{example}
+Let us assume that the earth is a perfect sphere (i.e. it looks like a ball). We wrap a rope once around the earth along the equator. Now, let's extend that rope by 1 metre and place the rope in a way ``around'' the earth such that the distance between the rope and the earth is everywhere the same. What is this distance? And what happens if we extend that rope by another metre? What distance do we get then? And again by another metre, and again... and so on? So what is the distance between the rope and the earth if we prolongate it by
+\begin{enumerate}[label=\emph{\alph*})]
+
+\item 1 metre
+\item 2 metres
+\item 3 metres
+\item \ldots
+\item $p$ metres?
+\end{enumerate}
+\end{example}
+
+The $p$ is called a \textbf{parameter}. Notice that math only becomes really useful with parameters. Parameters allow us to solve infinitely many equations in just one go. We can't only calculate what happens when we extend the rope by 1 metre, or 2 metres. By looking at the case of extending it by $p$ metres, we can solve all questions immediately: If we want the solution for a particular amount of metres, for example 37 metres, we just plug in 37 for $p$ and get the result. Solving one equation is therefore enough to solve infinitely many questions! This is one reason which makes mathematics so useful. 
+\vsp
+
+\begin{tcolorbox}[colback=white]
+\begin{definition}
+$ $
+
+A \textbf{variable} (Latin vari(us) ``various'' -abilis ``-able'', i.e. capable of changing) is a symbol (commonly an alphabetic character) in a mathematical term. An equation may be solved with respect to that variable to get a solution of the equation.  
+\vsp
+
+A \textbf{mathematical constant} is a special number that is somehow interesting. It is a fixed value which cannot be changed. Such constants are for example in mathematics $\pi$ or $e$ (the Euler number), in physics for example $c$ (speed of light) or $g$ (gravity on earth at sea level). 
+\vsp
+
+A \textbf{parameter} (Ancient Greek para ``beside'' and metron ``measure'') is a special type of variable. They normally occur together with other variables but are a bit different. A parameter is arbitrary like variables but fixed at the time. Unlike constant values which are always fixed, parameters may take different values. But we do not solve an equation with respect to them, because they are fixed for the moment when we are solving it. So we can consider them as an arbitrary number which may take different values but we are not interested in a solution for them. 
+\end{definition}
+\end{tcolorbox}
+
+
+\begin{example}
+
+Let's consider the equation $x+p=3$ with parameter $p$ and variable $x$. Transforming the equation results in
+\[
+x=3-p
+\]
+and therefore $\mathbb{L}=\{3-p\}$. 
+
+\end{example}
+\vfill
+
+\begin{example}
+Let's consider the following equation with parameter $a$ and variable $x$:
+\[
+ax=x+1
+\]
+Solving this equation with respect to $x$ results in
+\[
+ax=x+1 \hsp\Leftrightarrow\hsp ax-x=1 \hsp \Leftrightarrow \hsp (a-1)x=1
+\]
+
+We might be temped to claim that 
+\[
+x=\frac{1}{a-1}.
+\]
+But careful: We are never allowed to divide by $0$. But for $a=1$ the term $a-1$ is zero and therefore $\frac{1}{a-1}$ is not defined. We need to do a case-by-case analysis:\vsp
+
+\underline{Case $a=1$:} Our equation is therefore
+\[
+x=x+1 \hsp\Leftrightarrow\hsp x-x=1 \hsp\Leftrightarrow\hsp 0=1.
+\]
+Whatever we enter for $x$, we always get a wrong statement. I.e. the equation has no solutions which means that 
+\[
+\mathbb{L}=\emptyset \hsp\text{ if $a=1$}.
+\]
+
+\underline{Case $a\neq 1$:} Now we are allowed to divide by $a-1$ and get 
+\[
+\mathbb{L}=\left\{\frac{1}{a-1}\right\} \hsp\text{ if $a\neq 1$}
+\]
+
+\end{example}
+\vfill
+
+\newpage
+\begin{example}
+Here a slightly more complicated example. We want to solve the following equation with respect to the variable $x$ and with parameters $a$ and $b$:
+\[
+3a\cdot x +3b= x-2a
+\]
+We transform this equation such that all terms with variables are on one side of the equation and all the others on the other side:
+\[
+3a\cdot x-x=-2a-3b
+\]
+Simplifying the left-hand side results in
+\[
+(3a-1)x=-2a-3b.
+\]
+Since $3a-1$ could be zero (namely if $3a=1$, i.e. if $a=\frac{1}{3}$) we need to perform a case-to-case analysis:
+\vsp
+
+\underline{Case $a\neq\frac{1}{3}$:} In this case the equation has a unique solution and the solution set is given by
+\[
+\mathbb{L}=\left\{\frac{-2a-3b}{3a-1}\right\} \hsp\text{ if $a\neq\frac{1}{3}$}
+\]
+\vsp
+
+\underline{Case $a=\frac{1}{3}$:} In this case we are not allowed to divide by $3a-1$. We replace $a$ by $\frac{1}{3}$:
+\[
+(3\cdot \frac{1}{3}-1)x=-2\cdot\frac{1}{3}-3b \hsp\Rightarrow\hsp 0=-\frac{2}{3}-3b 
+\]
+Therefore, if $3b=-\frac{2}{3}$, i.e. $b=-\frac{2}{9}$, we get the equation 
+\[
+0=0
+\]
+and therefore the solution set $\mathbb{L}=\R$. But if $b\neq -\frac{2}{9}$ we do not get 0 on the right-hand side of the equation and therefore the solution set is empty:
+\begin{eqnarray*}
+\mathbb{L}=\R &\text{ if }& a=\frac{1}{3} \text{ and } b=-\frac{2}{9}\\
+\mathbb{L}=\emptyset &\text{ if }& a=\frac{1}{3} \text{ and } b\neq-\frac{2}{9}
+\end{eqnarray*}
+\end{example}
+\vfill
+
+\newpage
+\begin{exer} In this exercise, the variable is always denoted by $x$. All other letters denote parameters. Find the solution set for all possible values of the parameters. 
+
+\begin{enumerate}[label=\emph{\alph*})]
+
+\item $px=35$
+\vfill
+
+\item $kx=3x$
+\vfill
+
+\item $ax+a=5x$
+\vfill
+
+\item $4x+k^2=k(x+4)$
+\vfill
+
+\item $a^2x-a=x-1$
+\vfill
+
+\item $a^2-b^2=(b-a)x$
+\vfill
+
+\item $(a-b)x=ab$
+\vfill
+
+\end{enumerate}
+\end{exer}
+
+\newpage
+\begin{exer}
+Solve the following exercises:
+\begin{enumerate}[label=\emph{\alph*})]
+
+\item A mathematical pendulum reaches its highest point at a horizontal dilatation $b$ and a maximal vertical height $a$. Calculate the length of the pendant cord. 
+\vfill
+
+\item Alfons wants to sell a machine at price A. Berta wants to buy the machine at price B. They decide to reduce price A at the same rate as B is increased to get a price both agree to.
+  Find the percentage they had to change the prices and the price the machine is sold at the end.
+\vfill
+\newpage
+
+\item Two squares differ in the length of their sides by $a$ and in the area by $A$. Calculate the side lengths of the two squares. 
+\vfill
+
+\item One side of a rectangle is longer by $c$ units than the other side of the rectangle. If we extend the longer side by $a$ and shorten the shorter side by $b$ (where $b<a$), we get a new rectangle which has the same area as the original one. Calculate the width of the original rectangle. 
+\vfill
+
+
+\end{enumerate}
+\end{exer}
+% Linear Equations in One Variable and Parameters:1 ends here
